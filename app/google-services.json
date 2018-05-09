@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "446271554063",
+    "firebase_url": "https://ibcofficemanagemant.firebaseio.com",
+    "project_id": "ibcofficemanagemant",
+    "storage_bucket": "ibcofficemanagemant.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446271554063:android:78519a7ee5937d7e",
+        "android_client_info": {
+          "package_name": "com.prithwiraj.ibc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "446271554063-npovncfku815gavm0n3lnhp4eicke5k6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.prithwiraj.ibc",
+            "certificate_hash": "72d2bbd87fb8f3fbfc600448a48500feace5692e"
+          }
+        },
+        {
+          "client_id": "446271554063-fp36bsgn5mjceodqusd390g9p1fjlb77.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcFXueBqR_cBwMfL6-wFLJ0SUFwU-J3gM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "446271554063-fp36bsgn5mjceodqusd390g9p1fjlb77.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

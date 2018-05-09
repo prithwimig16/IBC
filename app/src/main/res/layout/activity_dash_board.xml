@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    tools:context=".activities.DashBoardActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/d_toolbar_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/buttonColor"
+        android:minHeight="?attr/actionBarSize">
+
+        <com.prithwiraj.ibc.utils.CustomTitleTextView
+            android:id="@+id/tv_toolbar_title_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Housekeeping"
+            android:textColor="@color/BlackColor"
+            android:layout_marginStart="30dp"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <com.prithwiraj.ibc.utils.CustomTitleTextView
+            android:id="@+id/tv_dashboard_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textColor="@color/skycolor"
+            android:textSize="18dp" />
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/d_toolbar_details">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/view1"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:padding="10dp">
+
+                <com.prithwiraj.ibc.utils.CustomTitleTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My Office Number"
+                    android:textColor="@color/BlackColor"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/et_office_no_details"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/et_state"
+                    android:hint="Office Number"
+                    android:padding="8dp"
+                    android:inputType="number"
+                    android:textColor="@color/BlackColor"
+                    android:textColorHint="@color/iosGrayColor" />
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/et_serial_no"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/et_state"
+                    android:hint="Serial No"
+                    android:padding="8dp"
+                    android:inputType="number"
+                    android:textColor="@color/BlackColor"
+                    android:textColorHint="@color/iosGrayColor" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/view3"
+                android:orientation="vertical"
+                android:layout_below="@+id/view1"
+                android:visibility="gone"
+                android:layout_marginTop="35dp"
+                android:padding="10dp">
+
+
+                <com.prithwiraj.ibc.utils.CustomTitleTextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tv_select_bellow_tag"
+                    android:layout_height="wrap_content"
+                    android:text="Select anyone below"
+                    android:textColor="@color/BlackColor"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/et_tap_details"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/et_state"
+                    android:hint="Tap here"
+                    android:focusable="false"
+                    android:editable="false"
+                    android:inputType="none"
+                    android:padding="8dp"
+                    android:textColor="@color/BlackColor"
+                    android:textColorHint="@color/iosGrayColor" />
+
+                <com.prithwiraj.ibc.utils.CustomTitleTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Comments"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/BlackColor"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/et_comments_details"
+                    android:background="@drawable/et_state"
+                    android:padding="8dp"
+                    android:textColor="@color/BlackColor"
+                    android:inputType="textLongMessage" />
+
+                <Button
+                    android:layout_width="300dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/bt_submit_details1"
+                    android:background="@drawable/bluebutton"
+                    android:text="Submit"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/view2"
+                android:orientation="vertical"
+                android:layout_below="@+id/view1"
+                android:layout_marginTop="35dp"
+                android:padding="10dp">
+
+                <com.prithwiraj.ibc.utils.CustomTitleTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I need Cleaning for"
+                    android:textColor="@color/BlackColor"
+                    android:textSize="20dp"
+                    app:textAllCaps="false" />
+
+                <com.prithwiraj.ibc.utils.CustomTitleTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Select anyone below"
+                    android:textColor="@color/BlackColor"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/tv_team"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/et_state">
+
+
+                    <com.prithwiraj.ibc.utils.CustomTitleTextView
+                        android:id="@+id/tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginStart="15dp"
+                        android:text="Toilets"
+                        android:textColor="@color/BlackColor"
+                        android:textSize="18dp" />
+
+                    <Button
+                        android:id="@+id/bt_select1"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="13dp"
+                        android:layout_marginRight="13dp"
+                        android:visibility="gone"
+                        android:background="@drawable/toggleselected" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/tv_team"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/et_state">
+
+
+                    <com.prithwiraj.ibc.utils.CustomTitleTextView
+                        android:id="@+id/tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginStart="15dp"
+                        android:text="My Office"
+                        android:textColor="@color/BlackColor"
+                        android:textSize="18dp" />
+
+                    <Button
+                        android:id="@+id/bt_select2"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="13dp"
+                        android:layout_marginRight="13dp"
+                        android:visibility="gone"
+                        android:background="@drawable/toggleselected" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/tv_team"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/et_state">
+
+
+                    <com.prithwiraj.ibc.utils.CustomTitleTextView
+                        android:id="@+id/tv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginStart="15dp"
+                        android:text="Lobby"
+                        android:textColor="@color/BlackColor"
+                        android:textSize="18dp" />
+
+                    <Button
+                        android:id="@+id/bt_select3"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="13dp"
+                        android:layout_marginRight="13dp"
+                        android:visibility="gone"
+                        android:background="@drawable/toggleselected" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/view_join_button"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_below="@+id/view1">
+
+
+
+                <Button
+                    android:layout_width="300dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/bt_submit_details"
+                    android:background="@drawable/bluebutton"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

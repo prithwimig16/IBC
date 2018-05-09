@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    tools:context=".activities.AdminActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l1"
+        android:orientation="horizontal">
+
+        <com.prithwiraj.ibc.utils.CustomTitleTextView
+            android:id="@+id/tv_col1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="20dp"
+            android:text="OfficeNo"
+            android:textColor="@color/BlackColor"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <com.prithwiraj.ibc.utils.CustomTitleTextView
+            android:id="@+id/tv_col2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Issue"
+            android:textSize="14sp"
+            android:textColor="@color/BlackColor"
+            android:textStyle="bold" />
+
+
+        <com.prithwiraj.ibc.utils.CustomTitleTextView
+            android:id="@+id/tv_col3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="10dp"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:text="Raised By"
+            android:textSize="14dp"
+            android:textColor="@color/BlackColor"
+            android:textStyle="bold" />
+
+        <com.prithwiraj.ibc.utils.CustomTitleTextView
+            android:id="@+id/chk_col4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Status"
+            android:textColor="@color/BlackColor"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/l1"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:id="@+id/list_recycler"/>-->
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l1"
+        android:layout_marginTop="20dp"
+        android:id="@+id/list_view"/>
+
+</RelativeLayout>

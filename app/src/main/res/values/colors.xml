@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="BlackColor">#000000</color>
+    <color name="whiteColor">#FFFFFF</color>
+    <color name="skycolor">#1550fc</color>
+    <color name="buttonColor">#f3f3f3</color>
+    <color name="grayColor">#646464</color>
+    <color name="Blue">#0067D5</color>
+    <color name="colorSpiner">#F3F3F3</color>
+    <color name="iosGrayColor">#686868</color>
+</resources>
